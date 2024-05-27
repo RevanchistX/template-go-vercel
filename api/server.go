@@ -1,4 +1,4 @@
-package api
+package handler
 
 import (
 	"encoding/json"
@@ -18,7 +18,6 @@ type Room struct {
 //	//http.HandleFunc("/wasm", wasm)
 //	http.HandleFunc("/create-room", createRoom)
 //}
-
 
 func CreateRoom(writer http.ResponseWriter, request *http.Request) {
 	writer.Header().Set("Access-Control-Allow-Origin", "*")
